@@ -99,8 +99,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d44242;
-  border: 1px rgb(230, 25, 248) solid;
+  /* background-color: #d44242;
+  border: 1px rgb(230, 25, 248) solid; */
 }
 .mother1x {
   width: 100vw;
@@ -110,7 +110,7 @@ html {
   background-color: #c5c5c5;
 }
 .main1x {
-  height: 300px;
+  height: auto;
   width: 100%;
   /* border: 1px blue solid; */
 }
@@ -121,12 +121,13 @@ html {
   height: 40px;
   text-align: center;
   /* border: red solid 1px; */
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* hanya bayang di bawah */
 }
 .header1 {
   display: flex;
-  justify-content: center; /* Ini memang untuk kiri */
+  justify-content: start; /* Ini memang untuk kiri */
   align-items: center;
   width: 100%;
   margin: 0;
@@ -138,16 +139,24 @@ html {
 }
 .header2 {
   display: flex;
-  justify-content: flex-end; /* Ini memang untuk kiri */
+  justify-content: end; /* Ini memang untuk kiri */
   align-items: center;
   width: 100%;
-  padding-right: 20px;
-
-  margin: 0;
+  padding-right: 10px;
   /* border: red solid 1px; */
+}
+.sample1 {
+  /* border: solid red 1px; */
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img {
   border: rgb(165, 165, 165) solid 1px;
+
+  margin: ;
   width: auto;
 }
 
@@ -165,11 +174,11 @@ html {
 .main2x {
   height: auto;
   width: 100%;
-  border: 1px rgb(90, 90, 90) solid;
+  /* border: 1px rgb(90, 90, 90) solid; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -60px;
+  /* margin-top: -60px; */
   background-color: rgb(197, 197, 197);
 }
 .main21x {

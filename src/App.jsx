@@ -24,7 +24,7 @@ function App() {
                   />
                 </div>
                 <div>
-                  <div className="tajuk">
+                  <div style={{ fontSize: "20px" }} className="tajuk">
                     <a>Sensori 2025</a>
                   </div>
                 </div>
@@ -36,6 +36,9 @@ function App() {
                     alt="logo"
                   />
                 </div>
+              </div>
+              <div className="sample1">
+                <a style={{ fontSize: "16px" }}>Sample 1234 - karipap</a>
               </div>
               <div className="img">
                 <div className="img1">
