@@ -118,7 +118,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 40px;
   text-align: center;
   /* border: red solid 1px; */
   background-color: #ffffff;
@@ -126,24 +126,29 @@ html {
 }
 .header1 {
   display: flex;
-  justify-content: flex-start; /* Ini memang untuk kiri */
+  justify-content: center; /* Ini memang untuk kiri */
   align-items: center;
   width: 100%;
-  padding: 20px;
-  padding-top: -10px;
   margin: 0;
+  /* border: red solid 1px; */
+}
+.tajuk {
+  /* border: red solid 1px; */
+  width: 300px;
 }
 .header2 {
   display: flex;
   justify-content: flex-end; /* Ini memang untuk kiri */
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding-right: 20px;
+
   margin: 0;
+  /* border: red solid 1px; */
 }
 .img {
   border: rgb(165, 165, 165) solid 1px;
-  width: 100%;
+  width: auto;
 }
 
 .img1 {
@@ -157,14 +162,15 @@ html {
   background-color: rgb(255, 255, 255);
   /* border-radius: 10px; */
 }
-.main2 {
+.main2x {
   height: auto;
   width: 100%;
-  border: 1px green solid;
+  border: 1px rgb(90, 90, 90) solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: -60px;
+  background-color: rgb(197, 197, 197);
 }
 .main21x {
   /* border: solid 1px red; */

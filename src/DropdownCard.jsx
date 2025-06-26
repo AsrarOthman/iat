@@ -38,6 +38,19 @@ function DropdownCard() {
           <div className="slide-down" style={{ marginTop: "1rem" }}>
             <div>Ini Bahagian A yang muncul bila klik A!</div>
             <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
           </div>
         )}
       </div>
@@ -72,7 +85,20 @@ function DropdownCard() {
 
         {isOpenB && (
           <div className="slide-down" style={{ marginTop: "1rem" }}>
-            Ini Bahagian A yang muncul bila klik A!
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
+            <h1>data sini</h1>
           </div>
         )}
       </div>

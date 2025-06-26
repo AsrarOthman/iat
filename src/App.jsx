@@ -19,15 +19,20 @@ function App() {
                 <div className="header1">
                   <img
                     src="/logo-pertanian.png" // atau hanya "logo.jpeg" pun boleh
-                    height={45}
+                    height={30}
                     alt="logo"
                   />
+                </div>
+                <div>
+                  <div className="tajuk">
+                    <a>Sensori 2025</a>
+                  </div>
                 </div>
 
                 <div className="header2">
                   <img
                     src="/menu.png" // atau hanya "logo.jpeg" pun boleh
-                    height={30}
+                    height={25}
                     alt="logo"
                   />
                 </div>
