@@ -64,7 +64,10 @@ function DropdownCard() {
             height: "100px",
           }}
         >
-          <h3 style={{ padding: "10px" }}>Bahagian B (Klik Saya)</h3>
+          <h3 style={{ padding: "10px" }}>
+            {" "}
+            Ujian Sensori Produk Industri Asas Tani
+          </h3>
         </div>
 
         {isOpenB && (

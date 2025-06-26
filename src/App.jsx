@@ -38,7 +38,7 @@ function App() {
                     src="/img1.jpeg" // atau hanya "logo.jpeg" pun boleh
                     height={"100%"}
                     alt="logo"
-                    // style={{ borderRadius: "50%" }}
+                    style={{ borderRadius: "10px" }}
                   />
                 </div>
               </div>
