@@ -112,6 +112,9 @@ html {
 .main1x {
   height: auto;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   /* border: 1px blue solid; */
 }
 .header {
@@ -123,7 +126,7 @@ html {
   /* border: red solid 1px; */
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* hanya bayang di bawah */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .header1 {
   display: flex;
@@ -152,11 +155,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(201, 201, 201);
 }
 .img {
   border: rgb(165, 165, 165) solid 1px;
-
-  margin: ;
   width: auto;
 }
 
