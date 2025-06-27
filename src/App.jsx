@@ -57,7 +57,6 @@ function App() {
               <DropdownCard />
             </div>
           </div>
-          <div className="main3"></div>
         </div>
       </div>
     </>

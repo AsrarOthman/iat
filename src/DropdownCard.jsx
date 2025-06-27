@@ -4,6 +4,21 @@ import "./App.css";
 function DropdownCard() {
   const [isOpenA, setIsOpenA] = useState(false);
   const [isOpenB, setIsOpenB] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:3001/api/submit", { name, email });
+      alert("Berjaya simpan data!");
+      setName("");
+      setEmail("");
+    } catch (err) {
+      console.error(err);
+      alert("Gagal simpan data.");
+    }
+  };
 
   return (
     <div>
@@ -31,13 +46,50 @@ function DropdownCard() {
             height: "100px",
           }}
         >
-          <h3 style={{ padding: "10px" }}>Bahagian A (Klik Saya)</h3>
+          <h3 style={{ padding: "10px" }}>
+            BAHAGIAN A: PENILAIAN PEMBUNGKUSAN PRODUK
+          </h3>
         </div>
 
         {isOpenA && (
           <div className="slide-down" style={{ marginTop: "1rem" }}>
-            <div>Ini Bahagian A yang muncul bila klik A!</div>
-            <h1>data sini</h1>
+            <div>Ini Bahagian A yang Bentuk Produk</div>
+            <div style={{ padding: "2rem" }}>
+              <h2>Rasa</h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  width: "100%",
+                }}
+              >
+                {" "}
+                <div>Manis</div>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    className="inputbar"
+                    type="text"
+                    placeholder="Bau"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                  <br />
+                  <input
+                    className="inputbar"
+                    type="text"
+                    placeholder="Rasa"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <br />
+                  <button type="submit">Simpan</button>
+                </form>
+              </div>
+            </div>
             <h1>data sini</h1>
             <h1>data sini</h1>
             <h1>data sini</h1>
@@ -77,10 +129,7 @@ function DropdownCard() {
             height: "100px",
           }}
         >
-          <h3 style={{ padding: "10px" }}>
-            {" "}
-            Ujian Sensori Produk Industri Asas Tani
-          </h3>
+          <h3 style={{ padding: "10px" }}> BAHAGIAN B: UJIAN HEDONIK PRODUK</h3>
         </div>
 
         {isOpenB && (

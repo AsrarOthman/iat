@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border:solid 1px red; */
+  scroll-behavior: smooth;
+  /* border: solid 1px red; */
 }
 body {
   overflow-x: hidden;
@@ -94,13 +95,13 @@ html {
 /* ----------------------------------------App */
 /* page main  */
 .motherx {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* background-color: #d44242;
-  border: 1px rgb(230, 25, 248) solid; */
+  align-items: start;
+  /* background-color: #d44242; */
+  /* border: 1px rgb(230, 25, 248) solid; */
 }
 .mother1x {
   width: 100vw;
@@ -112,7 +113,8 @@ html {
 .main1x {
   height: auto;
   width: 100%;
-  position: sticky;
+  max-width: 600px;
+  position: fixed;
   top: 0;
   z-index: 1000;
   /* border: 1px blue solid; */
@@ -174,12 +176,14 @@ html {
   /* border-radius: 10px; */
 }
 .main2x {
+  margin-top: 300px;
   height: auto;
+  min-height: 100vh;
   width: 100%;
-  /* border: 1px rgb(90, 90, 90) solid; */
+  /* border: 1px rgb(255, 0, 0) solid; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   /* margin-top: -60px; */
   background-color: rgb(197, 197, 197);
 }
@@ -222,5 +226,9 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.inputbar {
+  width: 100%;
+  height: 30px;
 }
 /* ----------------------------------------DropdownCard */
