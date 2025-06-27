@@ -1,5 +1,5 @@
 * {
-  color: #ffffff;
+  color: #000000;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -229,6 +229,8 @@ html {
 }
 .inputbar {
   width: 100%;
+  min-width: 300px;
+
   height: 30px;
 }
 /* ----------------------------------------DropdownCard */

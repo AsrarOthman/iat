@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import TasteTable from "./TasteTable";
 
 function DropdownCard() {
   const [isOpenA, setIsOpenA] = useState(false);
@@ -56,7 +57,7 @@ function DropdownCard() {
             <div>Ini Bahagian A yang Bentuk Produk</div>
             <div style={{ padding: "2rem" }}>
               <h2>Rasa</h2>
-              <div
+              {/* <div
                 style={{
                   display: "flex",
                   flexDirection: "row",
@@ -65,17 +66,27 @@ function DropdownCard() {
                   width: "100%",
                 }}
               >
-                {" "}
-                <div>Manis</div>
                 <form onSubmit={handleSubmit}>
-                  <input
-                    className="inputbar"
-                    type="text"
-                    placeholder="Bau"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      alignContent: "center",
+                      width: "100%",
+                    }}
+                  >
+                    <div style={{ padding: "20px" }}>Manis</div>
+                    <input
+                      className="inputbar"
+                      type="text"
+                      placeholder="Bau"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                    />
+                  </div>
+
                   <br />
                   <input
                     className="inputbar"
@@ -88,21 +99,12 @@ function DropdownCard() {
                   <br />
                   <button type="submit">Simpan</button>
                 </form>
+              </div> */}
+              <div>
+                <h2>Penilaian Rasa</h2>
+                <TasteTable />
               </div>
             </div>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
-            <h1>data sini</h1>
           </div>
         )}
       </div>
