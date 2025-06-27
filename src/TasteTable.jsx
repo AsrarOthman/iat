@@ -11,7 +11,7 @@ const tasteData = [
 
 const TasteTable = () => {
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "0" }}>
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr style={{ backgroundColor: "#f0f0f0" }}>

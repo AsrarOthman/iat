@@ -195,6 +195,41 @@ html {
   margin: 20px 20px 20px 20px;
 }
 
+/* Gaya untuk header */
+.header2z {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  /* background-color: #ffffff; */
+}
+
+.header2z img {
+  cursor: pointer;
+}
+
+/* Gaya untuk sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* mulakan di luar skrin */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: right 0.3s ease-in-out; /* Animasi untuk sidebar */
+  padding: 20px;
+  /* box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.sidebar.open {
+  right: 0; /* Sidebar akan muncul di sebelah kanan */
+}
+
+/* Gaya untuk kandungan utama */
+.content {
+  margin: 20px;
+}
+
 /* ----------------------------------------App */
 
 /* ----------------------------------------DropdownCard */
