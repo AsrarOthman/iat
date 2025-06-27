@@ -15,7 +15,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+.mabo {
+  margin-top: -200px;
+}
 .mother {
   height: auto;
   width: 100vw;
@@ -27,8 +29,13 @@ html {
 }
 .mother1 {
   width: 100vw;
+  margin-top: 0;
   max-width: 600px;
-  height: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   /* border: 1px red solid; */
   background-color: #c5c5c5;
 }
@@ -39,7 +46,7 @@ html {
 }
 
 .main2 {
-  height: 500px;
+  height: 100px;
   width: 100%;
   /* border: 1px rgb(200, 255, 0) solid; */
   display: flex;
@@ -49,7 +56,7 @@ html {
 .main21 {
   /* border: solid 1px pink; */
   width: 90%;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 .main211 {
@@ -64,14 +71,56 @@ html {
   margin-top: 30px;
 }
 .main212 {
-  height: 300px;
-  width: 100%;
-  /* border: 1px rgb(0, 255, 21) solid; */
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  font-family: "Segoe UI", sans-serif;
 }
+
+.main212 label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.main212 select,
+.main212 input[type="password"] {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.main212 select:focus,
+.main212 input[type="password"]:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+.main212 button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.main212 button:hover {
+  background-color: #005fa3;
+}
+
 .login1 {
   height: 30px;
   width: 90%;
@@ -269,3 +318,36 @@ html {
   height: 30px;
 }
 /* ----------------------------------------DropdownCard */
+
+/* ----------------------------------------TasteForm */
+.table-professional {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.table-professional th,
+.table-professional td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.table-professional th {
+  background-color: #3f3f3f;
+  color: white;
+  font-size: 16px;
+}
+
+.table-professional tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-professional select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+/* ----------------------------------------TasteForm */

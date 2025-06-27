@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 import TasteTable from "./TasteTable";
+import TasteForm from "./TasteForm";
 
-function DropdownCard() {
+const DropdownCard = ({ panel, setPanel, selectedSample }) => {
   const [isOpenA, setIsOpenA] = useState(false);
   const [isOpenB, setIsOpenB] = useState(false);
   const [name, setName] = useState("");
@@ -102,7 +103,12 @@ function DropdownCard() {
               </div> */}
               <div>
                 <h2>Penilaian Rasa</h2>
-                <TasteTable />
+                <TasteForm
+                  panel={panel}
+                  setPanel={setPanel}
+                  selectedSample={selectedSample}
+                />
+                {/* <TasteTable /> */}
               </div>
             </div>
           </div>
@@ -155,6 +161,6 @@ function DropdownCard() {
       </div>
     </div>
   );
-}
+};
 
 export default DropdownCard;
